@@ -1,0 +1,160 @@
+@import "reset";
+@import "vars";
+@import "global";
+
+
+
+.major {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 0.7rem;
+    overflow: visible;
+    margin: auto;
+    max-width: 49.1rem;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 12%) 14px 41px 50px -20px;
+}
+
+.photo{
+    width: 40.5%;
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+    .drawers {
+    background-image: url(../images/drawers.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    height: 19.22rem;
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+    }
+        
+}
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        gap: 1.5rem;
+        width: 60%;
+        padding: 3%;
+        .heading {
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: $popover-n-btn;
+            line-height: 1.6rem
+        }
+        .paragraph {
+            color: $paragraph;
+            font-size: 1rem;
+            line-height: 1.3rem;
+        }
+    }
+
+    .lower-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .user-data {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+
+            .avatar {
+                border-radius: 50%;
+                overflow: hidden;
+                width: fit-content;
+
+                .user-pick {
+                    background-image: url(../images/avatar-michelle.jpg);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    width: 3rem;
+                    height: 3rem;
+                }
+            }
+            .box-data {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                gap: 0.3rem;
+                .person {
+                    font-weight: 700;
+                    color: $popover-n-btn;
+                    font-size: 0.9rem;
+                }
+                .date {
+                    color: $share;
+                    font-size: 0.9rem;
+                }
+            }
+        }
+}
+
+.popover-box{
+    position: relative;
+    .popover-body{
+        display: none;
+        background-color: hsl(217, 19%, 35%);
+        border-radius: 10px;
+        z-index: 10;
+        position: absolute;
+        top: -96px;
+        right: -107px;
+        box-shadow: rgb(0 0 0 / 38%) 14px 41px 50px -20px;
+        .tt_text {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            letter-spacing: 7px;
+            text-transform: uppercase;
+            padding: 1.3rem 2.4rem;
+            font-weight: 500;
+            gap: 10px;
+        }
+        span{
+            color: hsl(212, 23%, 69%);
+        }
+        .icons{
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            align-items: center;
+            gap: 1rem;
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            bottom: -12px;
+            right: 116px;
+            width: 25px;
+            height: 25px;
+            background: inherit;
+            transform: rotateZ(45deg);
+
+        }
+    }
+    .popover-body.active{
+        display: block;
+    }
+    #button {
+        border-radius: 50%;
+        border-style: none;
+        width: 2.5rem;
+        height: 2.5rem;
+        background-color: $body;
+        cursor: pointer;
+        
+        #arr.active{
+            fill: $body;
+        }
+    }
+    #button.active{
+        background-color: $paragraph;
+    }
+}
+
+@import "media";

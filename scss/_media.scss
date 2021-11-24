@@ -1,0 +1,133 @@
+
+
+@media (max-width: 820px){
+
+
+    .container{
+        padding-top: 6rem;
+        padding-bottom: 3rem;
+    }
+
+    .major{
+        flex-direction: column;
+        max-width: 26.1rem;
+    }
+
+    .photo {
+        width: 100%;
+        border-top-left-radius: inherit;
+        border-top-right-radius: inherit;
+        border-bottom-left-radius:unset;
+
+        .drawers{
+            border-top-left-radius: inherit;
+            border-top-right-radius: inherit;
+            border-bottom-left-radius:unset;
+        }
+    }
+
+    .text{
+        width: 100%;
+        padding: 8.5%;
+        padding-bottom: 6%;
+        .heading{
+            font-size: 1.3rem;
+            line-height: 1.8rem;
+        }
+        .paragraph {
+            font-size: 1.1rem;
+            line-height: 1.5rem;
+        }
+        .lower-box{
+            padding-top: 20px;
+        }
+    }
+
+.popover-box{ 
+    .popover-body{
+    top: -20px;
+    right: -36px;
+    left: -342px;
+    bottom: -29px;
+    border-top-left-radius: unset;
+    border-top-right-radius: unset;
+    box-shadow: none;
+    span{
+    font-size: 18px;
+    }
+    .icons{
+    gap: 1.7rem;
+    }
+    .tt_text{
+    gap: 28px;
+    padding: 1.3rem 2.4rem 1.4rem;
+    }
+}
+.popover-body::after{
+    content: unset;
+}
+.popover-body.active{
+    display:flex;
+}
+#button.active{
+    position: relative;
+    z-index: 999;
+    top: 0;
+    right: 0;
+}
+}
+}
+
+
+
+@media (max-width: 450px){
+
+.major{
+    min-width: 290px;
+    max-width: 290px;
+}
+
+.photo{ 
+    .drawers {
+    height: 15.22rem;
+    }
+}
+
+.text{ 
+    .heading {
+    font-size: 1rem;
+    line-height: 1.4rem;
+    }
+    .paragraph {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    }
+}
+
+.popover-box {
+    .popover-body {
+    top: -14px;
+    right: -26px;
+    left: -225px;
+    bottom: -21px;
+    }
+    #button.active {
+    position: relative;
+    z-index: 999;
+    }
+    .popover-body{ 
+    span {
+    font-size: 14px;
+    }
+    .tt_text{
+    padding: 1.3rem 1.4rem;
+    gap: 10px;
+    }
+    .icons {
+    gap: 0.8rem;
+    }
+  }
+}
+    
+
+}
